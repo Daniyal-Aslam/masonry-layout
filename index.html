@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System css</title>
+    <!-- CSS LINKS BEGIN -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS LINKS END -->
+</head>
+<body>
+    <!-- GRID SYSTEM CSS BEGIN -->
+    <div class="grid">
+        <div class="grid-item">
+            <img src="images/1.jpg" alt="grid-img">
+            <h1>Grid box 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque vero quaerat rem perspiciatis a veniam esse reprehenderit? Nesciunt qui laborum, ducimus facilis consectetur nihil. Qui iste adipisci ipsa quam!</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/2.jpg" alt="grid-img">
+            <h1>Grid box 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque vero quaerat rem perspiciatis a veniam esse reprehenderit? Nesciunt qui laborum, ducimus facilis consectetur nihil. Qui iste adipisci ipsa quam!</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/3.jpg" alt="grid-img">
+            <h1>Grid box 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque vero quaerat rem perspiciatis a veniam esse reprehenderit? Nesciunt qui laborum, ducimus facilis consectetur nihil. Qui iste adipisci ipsa quam!</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/4.jpg" alt="grid-img">
+            <h1>Grid box 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque vero quaerat rem perspiciatis a veniam esse reprehenderit? Nesciunt qui laborum, ducimus facilis consectetur nihil. Qui iste adipisci ipsa quam!</p>
+        </div>
+        <div class="grid-item">
+        <img src="images/5.jpg" alt="grid-img">
+        <h1>Grid box 5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque vero quaerat rem perspiciatis a veniam esse reprehenderit? Nesciunt qui laborum, ducimus facilis consectetur nihil. Qui iste adipisci ipsa quam!</p>
+    </div>
+    <div class="grid-item">
+        <img src="images/6.jpg" alt="grid-img">
+        <h1>Grid box 6</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque vero quaerat rem perspiciatis a veniam esse reprehenderit? Nesciunt qui laborum, ducimus facilis consectetur nihil. Qui iste adipisci ipsa quam!</p>
+    </div>
+    <div class="grid-item">
+        <img src="images/7.jpg" alt="grid-img">
+        <h1>Grid box 7</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque vero quaerat rem perspiciatis a veniam esse reprehenderit? Nesciunt qui laborum, ducimus facilis consectetur nihil. Qui iste adipisci ipsa quam!</p>
+    </div>
+    <div class="grid-item">
+        <img src="images/8.jpg" alt="grid-img">
+        <h1>Grid box 8</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta itaque vero quaerat rem perspiciatis a veniam esse reprehenderit? Nesciunt qui laborum, ducimus facilis consectetur nihil. Qui iste adipisci ipsa quam!</p>
+    </div>
+    </div>
+    <!-- GRID SYSTEM CSS END -->
+    <!-- MANSORY LAYOUT SOURCE -->
+    <script src="js/masonry.min.js"></script>
+    <script>
+        var elem = document.querySelector('.grid');
+        var msnry = new Masonry( elem, {
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 200,
+        originLeft: true,
+        transitionDuration: '0.8s',
+        stagger: 30  
+        }); 
+        // element argument can be a selector string
+        //   for an individual element
+        var msnry = new Masonry( '.grid', {
+        // options
+        });
+    </script>
+    <!-- MANSORY LAYOUT SOURCE -->
+</body>
+</html>
